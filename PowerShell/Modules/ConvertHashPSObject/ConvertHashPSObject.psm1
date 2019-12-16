@@ -38,8 +38,7 @@ function Convert-HashTablePSCustomObject {
         }
         if ($type -eq 'Hashtable') {
             $psCustomObject = New-Object PSCustomObject
-            foreach($key in $InputObject.keys){
-                
+            foreach($key in $InputObject.keys){                
                 $psCustomObject | Add-Member -Name $key -MemberType NoteProperty -Value $InputObject[$key]
             }
             return $psCustomObject
