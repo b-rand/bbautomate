@@ -23,7 +23,6 @@ function Convert-HashTablePSCustomObject {
         #[object]
         [object]
         $InputObject
-
     )
     #Determine if InputObject is of the correct type
     try {
@@ -53,5 +52,4 @@ function Convert-HashTablePSCustomObject {
         }
     }
 }
-
 Export-ModuleMember -Function Convert-HashTablePSCustomObject
